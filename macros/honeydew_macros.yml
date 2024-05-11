@@ -1,0 +1,36 @@
+version: 2
+
+macros:
+
+  - name: snowflake_native_app_call
+    description: >
+      Calls the Honeydew Snowflake Native Application
+    arguments:
+      - name: call_name
+        type: string
+        description: Name of API to call
+      - name: workspace
+        type: string
+        description: Name of workspace
+      - name: branch
+        type: string
+        description: Name of branch
+      - name: parameter
+        type: string
+        description: Parameter to pass to the API
+
+  - name: get_dataset_sql
+    description: >
+      Get the compiled SQL for a Honeydew dataset. Workspace and branch as set in the dbt project.
+    arguments:
+      - name: dataset_name
+        type: string
+        description: Name of the dataset
+
+  - name: get_entity_sql
+    description: >
+      Get the compiled SQL for a Honeydew entity cache. Workspace and branch as set in the dbt project.
+    arguments:
+      - name: entity_name
+        type: string
+        description: Name of the entity
