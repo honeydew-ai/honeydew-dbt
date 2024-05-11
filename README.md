@@ -2,6 +2,16 @@
 
 Honeydew dbt package, used to call into Honeydew using the Snowflake native application.
 
+## Installation
+
+Add to the `packages.yml` of your dbt project:
+
+```yml
+packages:
+  - git: "https://github.com/honeydew-ai/honeydew-dbt.git"
+    revision: "latest"
+```
+
 ## Configuration
 
 The [variables](https://docs.getdbt.com/docs/using-variables) needed to configure this package are as follows:
